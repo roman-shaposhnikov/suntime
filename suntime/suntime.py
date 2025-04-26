@@ -159,7 +159,7 @@ class Sun:
 
         #10. Return
         hr = self._force_range(int(UT), 24)
-        min = round((UT - int(UT))*60, 0)
+        min = round((UT - math.floor(UT))*60, 0)
         if min == 60:
             hr += 1
             min = 0
